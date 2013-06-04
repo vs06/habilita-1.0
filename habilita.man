@@ -1,0 +1,42 @@
+1- O QUE É?
+
+Este programa é um teste simulado de um exame teórico do DETRAN.
+Ele consiste em 30 questões com 5 alternativas cada (a, b, c, d, e).
+Cada questão contém uma, e somente uma, alternativa correta.
+Para realizar o teste basta digitar no teclado a letra minúscula correspondente à alternativa e conferir a resposta.
+Ao final das 30 questões o programa exibe o numero de acertos total.
+
+
+2- COMO USAR? 
+
+Para executar o programa abra o diretório onde o programa foi instalado e dê um duplo clique no arquivo executável (habilita.exe).
+Um outro modo é: Iniciar > Executar > cmd.exe > cd “Diretório onde o programa foi instalado” > habilita.exe
+Uma vez que o programa esteja em execução, basta digitar uma das alternativas que julgue estar correta (em letra minúscula) e pressionar ENTER.
+Este processo deve ser repetido até que as 30 questões sejam respondidas, no final, o programa exibe o resultado e mostra se o candidato seria aprovado ou não no exame.
+
+
+3-INSERINDO NOVAS PERGUNTAS NO BANCO DE QUESTÕES:
+
+O programa utiliza-se de um banco de questões (bancodequestoes.db) que pode ser editado em qualquer editor de texto plano (ASCII).
+Existem regras na inserção de perguntas para o bom funcionamento do programa.
+A pergunta inserida deve ter, no Maximo, 400 caracteres e deve estar totalmente contida em uma, e somente uma, linha de texto. A quebra-de-linha (ENTER) só deve ser inserida no final da pergunta.
+Para cada pergunta deve haver 5 alternativas separadas por quebra-de-linha (ENTER) com, no máximo, 255 caracteres por alternativa.
+Na linha seguinte a descrição da ultima alternativa deve constar a resposta certa correspondente a uma alternativa da pergunta no seguinte formato: "letra *", onde "*" deve ser uma das alternativas ("a", "b", "c", "d" ou "e").
+A ultima linha do arquivo deve ser no formato descrito acima.
+Exemplo:
+Pergunta exemplo. A alternativa INCORRETA é:
+cada alternativa deve ter, no máximo, 255 caracteres.
+uma pergunta pode ter, em sua totalidade, 400 caracteres.
+a ultima linha do arquivo bancodequestoe.db devera conter a resposta correta no formato: "letra *", onde "*" pode ser "a", "b", "c", "d" ou "e".
+o arquivo bancodequestoe.db pode ter linhas em branco.
+para cada pergunta pode haver apenas 5 alternativas.
+letra d
+
+4- BUGS E ERROS:
+
+Este programa é Case sensitive, ou seja, existe diferença entre letras minúsculas e MAIÚSCULAS. Portanto, quando for assinalar a alternativa que julgue estar correta, digite tudo em letras minúsculas.
+Um bug conhecido é que, por causa da aleatoriedade na escolha das perguntas, por vezes, o programa exibe mais de uma vez a mesma pergunta num determinado teste.
+
+5- SOBRE...
+
+Para reportar bugs, adquirir outras versões ou obter maiores informações visite: http://www.inf.ufpr.br/vs06/habilita 
