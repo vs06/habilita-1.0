@@ -15,8 +15,8 @@ do
         rd=$(echo $resps | cut -d# -f4)
         re=$(echo $resps | cut -d# -f5)
         r=$(echo $resps | cut -d# -f6)
-        echo -e "INSERT INTO question VALUES ("$j",'"$perg"','"$ra"','"$rb"','"$rc"','"$rc"','"$rd"','"$re"','"$r"');\n"
         j=$((j+1))
+        echo -e "INSERT INTO question VALUES ("$j",'"$perg"','"$ra"','"$rb"','"$rc"','"$rd"','"$re"','"$r"');\n"
 done < questions
 
 #j=0;
